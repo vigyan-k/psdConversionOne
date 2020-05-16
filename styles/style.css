@@ -375,6 +375,7 @@ input[type=email]{
     margin-bottom:5px;
 }
 
+/* Desktop Retina View */
 @media (max-width: 1020px) {
 
     input[type=email]{
@@ -386,8 +387,9 @@ input[type=email]{
     }
 }
 
-@media (max-width: 950px) {
-
+/* Desktop View */
+@media (max-width: 990px) {
+    
     .row1 p,
     .row2 p{
         font-size:1.3rem;
@@ -395,10 +397,12 @@ input[type=email]{
 
     .row1 h2,
     .row2 h2{
-        font-size:1.8rem;
+        font-size:2.4rem;
     }
+
 }
 
+/* Phone Landscape Mode */
 @media (max-width: 760px) {
 
     #header{
@@ -496,7 +500,6 @@ input[type=email]{
         visibility: hidden;
         margin:0;
     }
-
 
     .ham{
         display:inline-block;
