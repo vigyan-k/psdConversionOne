@@ -13,7 +13,7 @@
         <div class="wrapper">
             <!-- Navigation Bar -->
             <nav> 
-                <button>MENU Toggle</button>
+                <button class="ham"><i class="fas fa-bars ham"></i></button>
                 <ul>
                     <li><a href="index.html#header">Home</a></li>
                     <li><a href="index.html#main">About</a></li>
@@ -23,7 +23,7 @@
             </nav>
 
             <!-- Title -->
-            <div class="title">
+            <div class="title clearfix">
                 <h1>-Aro-</h1>
                 <h1>Ra</h1>
                 <h3>Jewelers</h3>
@@ -45,7 +45,8 @@
     <section id="main">
         <!-- Article Area-->
         <div class="article clearfix wrapper">
-            <img src="styles/assets/image-6@2x.png">
+            <img class="img1" src="styles/assets/image-6@2x.png" alt="">
+            <img class="img2" src="./styles/assets/kyle-frederick-1042416-unsplash.jpg" alt="">
             <div class="text4">
                 <h2>Hand Crafted</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corporis fuga beatae atque debitis accusantium magni recusandae voluptatum sapiente quas expedita, reiciendis, facere consequatur sit, delectus illum distinctio exercitationem? Eligendi repellat soluta pariatur magni quaerat molestias labore excepturi distinctio, et at. Architecto dolor, eum quae odit molestiae vitae nihil odio non corrupti, rerum corporis facere quaerat laborum fugiat fuga provident.</p>
@@ -55,12 +56,14 @@
 
         <!-- 3 Images -->
         <div class="grid">
-            <h2>LATEST COLLECTION</h2>
-            <div class= "clearfix wrapper">
-                <div class="box"><img src="styles/assets/image-2_2@2x.png"></div>
-                <div class="box"><img src="styles/assets/image-4@2x.png"></div>
-                <div class="box"><img src="styles/assets/image-3.jpg"></div>
+            <div class="wrapper">
+                <h2>LATEST COLLECTION</h2>
+                <div class= "collection clearfix">
+                    <div class="box"><img src="styles/assets/image-2_2@2x.png"></div>
+                    <div class="box"><img src="styles/assets/image-4@2x.png"></div>
+                    <div class="box"><img src="styles/assets/image-3.jpg"></div>
                 </div>
+            </div>
         </div>
     </section>
 
@@ -121,13 +124,13 @@
                 </ul>
             </div>
             <div class="column column2">
-                <ul>
+                <ul class="clearfix">
                     <li><p>STAY UPDATED</p></li>
                     <li><p>Subscribe to our newsletter to stay updated</p></li>
                     <form action="#" method = "POST" id="mailing" name="mailing">
                             <input type="email" id="email" name="email" placeholder="email address" required>
                     </form>
-                    <span class="button">Subscribe</span>
+                    <span class="button2">Subscribe</span>
                 </ul>
             </div>
             <div class="column column3">
@@ -140,7 +143,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright 2019 HackerYou</p>
+            <p>Copyright Ⓒ 2019 HackerYou</p>
         </div>
     </section>
 </body>
