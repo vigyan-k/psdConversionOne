@@ -72,7 +72,8 @@ h1,
 h2,
 h4,
 p,
-span{
+span,
+.column a{
     color:#ffffff;
 }
 
@@ -310,6 +311,10 @@ h3{
     line-height: 2rem;
 }
 
+.column1 a{
+    display:block;
+}
+
 .column2 ul li:nth-child(1) p,
 .column2 ul li:nth-child(2) p{
     text-align: center;
@@ -436,25 +441,35 @@ input[type=email]{
         margin-top:10%;
     }
 
+    .rows{
+        position:relative;
+    }
+
     .text4 h2,
-    .text4 .button{
+    .text4 .button,
+    .rows h2,
+    .rows .button{
         text-align: center;
     }
 
-    .text4 .button{
+    .text4 .button,
+    .row1 .button,
+    .row2 .button{
         display: block;
         position: absolute;
-        bottom:5%;
-        left:25%;
         font-size: 2.8rem;
+    }
+
+    .text4 .button,
+    .row2 .button{
+        bottom:4%;
+        left:30%;
     }
 
     .grid .box{
         width:49%;
         margin:0;
     }
-
-    
 
     .collection div:nth-child(3){
         border:red solid 2px;
@@ -465,4 +480,96 @@ input[type=email]{
         width:100%;
         margin:10px;
     }
+
+    .text1,
+    .text2{
+        display:block;
+        width:100%;
+        padding: 5% 0;
+        float:none;
+    }
+
+    .text1 h2,
+    .text2 h2{
+        margin: 5%;
+    }
+
+    .row1,
+    .row2{
+        height: 70vh;
+    }
+
+    .row1 img{
+        float:none;
+        width:100%;
+    }
+
+    .row2 img{
+        float:none;
+        width:100%;
+    }
+
+    .row1 .button{
+        top:44%;
+        left:30%;
+        margin:5%;
+    }
+
+    .column {
+        width: 100%;
+        float:none;
+        margin: 5% 0;
+        line-height: 2rem;
+    }
+
+    .column1{
+        margin:0 0 10px 0;
+        padding-top:5%;
+        margin-bottom:10%;
+    }
+
+    .column1 a{
+        font-family: 'lato';
+        font-size: 1.7rem;
+        font-weight: 300;
+        color:white;
+        display: inline-block;
+    }
+
+    .column2 ul li:nth-child(1) p,
+    .column2 ul li:nth-child(2) p{
+        text-align: center;
+        width: 100%;
+    }
+    
+    input[type=email]{
+        margin-top:10px;
+        font-size: 1.5rem;
+        text-align: center;
+        width:100%;
+        float:none;
+    } 
+    
+    .button2{
+        text-align: center;
+        display:inline-block;
+        background: black;
+        font-size: 2.6rem;
+        width:100%;
+        text-transform: uppercase;
+        margin: 0 0 5% 0;
+    }
+    
+    .column3{
+        text-align: center;
+        float: none;
+        margin: 0 0 10% 0;
+    }
+    
+    .column2 li:nth-child(1) p,
+    .column3 li:nth-of-type(1) p{
+        margin: 5% 0;
+        font-size: 3rem;
+    }
+
 }
