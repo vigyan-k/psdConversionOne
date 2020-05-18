@@ -77,9 +77,9 @@ span,
     color:#ffffff;
 }
 
-a,
+nav a,
 h3{
-    color:#faba63
+    color:#faba63;
 }
 
 h1{
@@ -131,7 +131,7 @@ p{
 /* Header Section -------*/
 #header{
     background-image: url('assets/header-2.jpg');
-    height: 70vh;
+    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -147,7 +147,8 @@ li{
     display:inline;
 }
 
-a{
+nav a,
+.column1 a{
     text-decoration: none;
     font-size: 2rem;
     padding: 0 10px;
@@ -177,35 +178,36 @@ h3,
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* Social Media Links */
 .links ul{
     position: absolute;
-    bottom:40px;
+    bottom:60px;
     right:70px;
 }
 
-.icon{
+.icon, 
+.fab{
     display:inline-block;
     color:white;
-    font-size: 3rem;
+    font-size: 3.5rem;
     position: absolute;
 }
 
 .pos1{
-    bottom:130px;
-    left:5px;
+    bottom:150px;
+    left:4px;
 }
 
 .pos2{
-    bottom:90px;
-    left:5px;
+    bottom:100px;
+    left:6px;
 }
 
 .pos3{
-    bottom:50px;
+    bottom:45px;
 }
 
 .pos4{
@@ -237,7 +239,7 @@ h3{
     display:inline-block;
     padding:5px;
     margin-top:10px;
-    transition: 400ms;    
+    transition: ease-in 400ms;    
 }
 
 .button:hover{
@@ -296,6 +298,10 @@ h3{
     height: 50%;
 }
 
+.row1 .rep2{
+    display:none;
+}
+
 .row2 img{
     float:left;
     width:50%;
@@ -345,6 +351,11 @@ input[type=email]{
     width:20%;
     text-transform: uppercase;
     text-align: center;
+    transition: ease-in 400ms;
+}
+
+.button2:hover{
+    background-color: #faba63;
 }
 
 .column3{
@@ -400,15 +411,19 @@ input[type=email]{
         font-size:2.4rem;
     }
 
+    .column2 li:nth-child(2) p{
+        font-size:1.2rem;
+    }
+
 }
 
 /* Phone Landscape Mode */
-@media (max-width: 760px) {
+@media (max-width: 780px) {
 
     #header{
         background-image: url('./assets/header-1.jpg');
         background-size: fit;
-        height: 80vh;
+        height: 90vh;
     }
 
     .row1 img,
@@ -418,6 +433,14 @@ input[type=email]{
         width:100%;
         float:none;
         margin: 0;
+    }
+
+    .row1 .rep1{
+        display:none;
+    }
+
+    .row1 .rep2{
+        display:block;
     }
 
     .row1, .row2{
@@ -491,8 +514,6 @@ input[type=email]{
 @media (max-width: 500px) {
 
     #header{
-        background-image: url('./assets/header-1.jpg');
-        background-size: fit;
         height: 95vh;
     }
 
@@ -524,6 +545,10 @@ input[type=email]{
         margin-left:0;
     }
 
+    .title h3{
+        font-size: 2.3rem;
+    }
+
     .article{
         position:relative;
         height:100vh;
@@ -553,7 +578,7 @@ input[type=email]{
     .rows{
         position:relative;
     }
-
+ 
     .text4 h2,
     .text4 .button,
     .rows h2,
@@ -566,13 +591,13 @@ input[type=email]{
     .row2 .button{
         display: block;
         position: absolute;
-        font-size: 2.8rem;
+        font-size: 1.5rem;
     }
 
     .text4 .button,
     .row2 .button{
-        bottom:4%;
-        left:30%;
+        bottom:2%;
+        left:40%;
     }
 
     .grid .box{
@@ -605,7 +630,7 @@ input[type=email]{
 
     .row1,
     .row2{
-        height: 70vh;
+        height: 80vh;
     }
 
     .row1 img{
@@ -619,14 +644,8 @@ input[type=email]{
     }
 
     .row1 .button{
-        top:40%;
-        left:30%;
-        margin:5%;
-        font-size: 1.5rem;
-    }
-
-    .row2 .button{
-        font-size: 1.5rem;        
+        top:43%;
+        left:40%;
     }
 
     input[type=email]{
