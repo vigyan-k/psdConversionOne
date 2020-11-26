@@ -342,6 +342,10 @@ input[type=email]{
     float:left;
 } 
 
+.column2 a{
+    text-decoration: none;
+}
+
 .button2{
     display:inline-block;
     background: black;
@@ -388,19 +392,17 @@ input[type=email]{
 
 /* Desktop Retina View */
 @media (max-width: 1020px) {
-
     input[type=email]{
-        width:70%;
+    width:70%;
     } 
 
     .button2{
-        width:30%;
+    width:30%;
     }
 }
 
 /* Desktop View */
 @media (max-width: 990px) {
-    
     .row1 p,
     .row2 p{
         font-size:1.3rem;
@@ -414,7 +416,6 @@ input[type=email]{
     .column2 li:nth-child(2) p{
         font-size:1.2rem;
     }
-
 }
 
 /* Phone Landscape Mode */
